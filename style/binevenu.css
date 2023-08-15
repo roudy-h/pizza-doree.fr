@@ -1,0 +1,54 @@
+.presentation .bienv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-image: url("/images/img_pizza_deb_fonce.jpg");
+    background-size: cover;
+    font-size: 100px;
+    font-family: 'Open Sans';
+    padding: 0px 40px 80px 40px;
+}
+
+.bienv p {
+    font-size: 0.68em;
+}
+
+#lieux{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
+    font-size: 0.55em;
+    flex-wrap: wrap;
+}
+
+#lieux p{
+    font-size: 60px;
+    max-width: 610px;
+}
+
+
+
+@media (max-width: 800px) {
+    .presentation .bienv{
+        font-size: 50px;
+        padding: 0px 20px 40px 20px;
+    }
+
+    .bienv p {
+        font-size: 0.68em;
+    }
+
+    #lieux{
+        gap: 5px;
+    }
+
+    #lieux p{
+        font-size: 40px;
+        max-width: 600px;
+        padding-top: 20px;
+    }
+
+}

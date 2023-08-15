@@ -1,0 +1,207 @@
+/*Pizza*/
+.element{
+    padding: 2% 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.element .titre{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+
+.element .titre h1{
+    font-size: 35px;
+}
+
+.element  h2{
+    font-size: 20px;
+}
+
+.pizza{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tailles{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.taille-pizza{
+    background-color: white;
+    border: solid 3px #b6ae55;
+    border-radius: 20px;;
+    padding: 25px;
+    color: rgba(35,168,52,255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.taille-pizza p {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.pizza_25{
+    padding: 20px;
+}
+
+.pizza_30{
+    padding-bottom: 20px;
+}
+
+.tartine{
+    padding-bottom: 55px;
+}
+
+@media (max-width: 800px) {
+    .element{
+        gap: 20px;
+    }
+    
+    .element .titre{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    
+    .element .titre h1{
+        font-size: 25px;
+    }
+    
+    .element  h2{
+        font-size: 17px;
+        text-align: justify;
+        font-weight: 700;
+    }
+    
+    .pizza{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .tailles{
+        gap: 20px;
+    }
+    
+    .taille-pizza{
+        padding: 15px;
+        gap: 10px;
+    }
+    
+    .taille-pizza p {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .pizza_25{
+        padding: 10px 10px 25px 10px ;
+        width: 85px;
+        height: 85px;
+    }
+
+    .pizza_30{
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .tartine{
+        padding-bottom: 85px;
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*Pizza*/
+.surbloc{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(550px,1fr));
+    row-gap: 25px;
+    column-gap: 25px;
+}
+
+@media (max-width: 800px) {
+    .surbloc{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        row-gap: 25px;
+        column-gap: 25px;
+    }
+}
+
+
+.content{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: solid 3px #b6ae55;
+    border-radius: 20px;;
+}
+
+.content .gauche{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.content #titre{
+    color: rgba(35,168,52,255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content #ingre{
+    color: red;
+    font-size: 16px;
+    display: flex;
+}
+
+#prix{
+    color: red;
+    min-width: 80px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#prix .taille{
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+}
+
+#prix .prix_taille{
+    display: flex;
+    justify-content: space-around;
+}
+
+

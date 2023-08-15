@@ -1,0 +1,76 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+.menu .logo{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: #b6ae55;
+    font-size: 20px;
+    -webkit-text-stroke: 0.10px white;
+}
+
+.menu .logo img{
+    width: auto;
+    height: 22px;
+}
+
+
+/*Buttons*/
+label, #toggle {
+    display: none;
+}
+
+.bouton{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+
+@media (max-width: 800px) { 
+    .menu{
+        padding: 10px 10px;
+    }
+
+    .bouton {
+        display: none;
+    }
+
+    label {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+
+.visible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+    padding: 15px;
+    padding-bottom: 1000px;
+}
+
+.invisible{
+    display: none;
+}
