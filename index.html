@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="/style/menu.css">
     <link rel="stylesheet" href="/style/binevenu.css">
     <link rel="stylesheet" href="/style/pizza.css">
-    <link rel="stylesheet" href="/style/horaires.css">
+    <link rel="stylesheet" href="/style/emplacements.css">
+    <link rel="stylesheet" href="/style/commander.css">
+    <link rel="stylesheet" href="/style/livraison.css">
 </head>
 <body>
     
@@ -25,25 +27,25 @@
             <label for="toggle">☰</label>
             <input type="checkbox" id="toggle">
              <div class="bouton">
-                <a href="#pizza_btn">Pizzaa</a>
+                <a href="#pizza_btn">Pizza</a>
                 <!--
                 <p>La cuisine d'Orée</p>
                 -->
-                <a href="">Lieux</a>
-                <a href="">Commander</a>
-                <a href="">Livraison</a>
+                <a href="#emplacements">Emplacements</a>
+                <a href="#commander">Commander</a>
+                <a href="#livraison">Livraison</a>
             </div>
         </nav>
     </nav>
 
     <div id="bouton-mobile" class="invisible">
-        <a href="#pizza_btn">Pizzaa</a>
+        <a href="#pizza_btn">Pizza</a>
         <!--
         <p>La cuisine d'Orée</p>
         -->
-        <a href="">Lieux</a>
-        <a href="">Commander</a>
-        <a href="">Livraison</a>
+        <a href="#emplacements">Emplacements</a>
+        <a href="#commander">Commander</a>
+        <a href="#livraison">Livraison</a>
     </div>
 
     <script src="/script/menu.js"></script>
@@ -55,13 +57,13 @@
             <h2>Bienvenu</h2>
             <p>chez la pizza d'Orée à la Chapelle sur Erdre</p>
             <div id="lieux">
+                <!--
                 <p>Midi : 18 Rue Arago ZAC GESVRINE, 44240 La Chapelle-sur-Erdre</p>
                 <p>soir : Av. Olympe de Gouges, 44240 La Chapelle-sur-Erdre</p>
+                -->
             </div>
 
-        </div>
-        <!--<img src="/images/img_pizza_deb.jpg">-->
-        
+        </div>        
     </div>
 
     <!--Pizza-->
@@ -516,136 +518,49 @@
         </div>
     </div>
 
-<!--
-    <div class="element">
-        <div class="titre">
-            <h1>La cuisine d'Orée</h1>
-            <h2>Pour gourmands et gourmets. Passez command entre 10h et 10h30.</h2>
-        </div>
+    <div id="emplacements">
+        <h1>Emplacements</h1>
 
-        <div class="surbloc">
-            <div class="case">
-                <img class=img-responsive src="/img/Falafel.jpg">
-                <div class="droit">
-                    <div class="desc">
-                        <div class="titre">
-                            Sandwich FALAFEL
-                        </div>
-                        <div class="ingre">
-                            Pain, Falafel, salade, tomates fraiches, persil, cornichons et sauce falafel
-                        </div>
+        <div class="emplacements">
+            <div class="emplacement">
+                <h2>Midi</h2>
+                <div class="infoLieu">
+                    <div class="adresseEtHoraires">
+                        <p> <b>Adresse</b> : 18 Rue Arago ZAC GESVRINE, 44240 La Chapelle-sur-Erdre</p>
+                        <p><b>Horaires</b> : 11h00 - 14h00</p>
                     </div>
-                    <div class="prix">
-                        5€
-                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d715.5190471904253!2d-1.5539633011365501!3d47.26132593612231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ee72b946b449%3A0x9106acdc4248cc86!2sL&#39;ATELIER%20AUTO%20AD%20EXPERT!5e1!3m2!1sfr!2sfr!4v1693054079334!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
                 </div>
             </div>
-
-            <div class="case">
-                <img class=img-responsive src="/img/shawerma.jpg">
-                <div class="droit">
-                    <div class="desc">
-                        <div class="titre">
-                            Sandwich SHAWERMA
-                        </div>
-                        <div class="ingre">
-                            Pain, filet de poulet, tomates fraiches, salade, cornichons et sauce curry
-                        </div>
+    
+            <div class="emplacement">
+                <h2>Soir</h2>
+                <div class="infoLieu">
+                    <div class="adresseEtHoraires">
+                        <p> <b>Adresse</b> : Parking la chapelle aulnay oeust, 44240 La Chapelle-sur-Erdre</p>
+                        <p><b>Horaires</b> : 17h00 - 21h30</p>
                     </div>
-                    <div class="prix">
-                        5€
-                    </div>
-                </div>
-            </div>
-
-            <div class="case">
-                <img class=img-responsive src="/img/kefta.jpg">
-                <div class="droit">
-                    <div class="desc">
-                        <div class="titre">
-                            Sandwich KEFTA
-                        </div>
-                        <div class="ingre">
-                            Pain, viande hachée, tomates fraiches, salade, cornichons, persil et sauce mayonnaise
-                        </div>
-                    </div>
-                    <div class="prix">
-                        5€
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="case">
-                <img class=img-responsive src="/img/kebab.jpg">
-                <div class="droit">
-                    <div class="desc">
-                        <div class="titre">
-                            Sandwich KEBAB
-                        </div>
-                        <div class="ingre">
-                            Pain, kebab, tomates fraiches, salade, cornichons et sauce kebab
-                        </div>
-                    </div>
-                    <div class="prix">
-                        5€
-                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2634.8521922406767!2d-1.5470586237077255!3d47.308423071164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805f18917a6dcdf%3A0xacfa40feff4a18c6!2sLa%20pizza%20d&#39;or%C3%A9e!5e1!3m2!1sfr!2sfr!4v1693054745528!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <div class="element">
-        <div class="titre">
-            <h2>À L'UNITÉ</h2>
-        </div>
-
-        <div class="surbloc">
-            <div class="case">
-                <img class=img-responsive src="/img/Falafel.jpg">
-                <div class="droit">
-                    <div class="desc">
-                        <div class="titre">
-                            HOUMMOUS
-                        </div>
-                        <div class="ingre">
-                            Pois chiches et sacue tahin (césame)
-                        </div>
-                    </div>
-                    <div class="prix">
-                        <div class="quantite espace">
-                            <p>100 g</p>
-                            <p>200 g</p>
-                        </div>
-                        <div class="prix_quantite espace">
-                            <p>3€</p>
-                            <p>5€</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div id="commander">
+        <h1>Commander</h1>
+        <div class="infoCommande">
+            <h2>Par téléphone</h2>
+            <p>Numéro de téléphone : 07 68 25 69 21</p>
         </div>
     </div>
 
-
-
-    <div id="camion">
-        <img src="/images/Photo du camion.jpg">
+    <div id="livraison">
+        <h1>Livraison</h1>
+        <div class="infoLivraison">
+            <p>Livraison à partir du 4 septembre 2023, en commandant par téléphone.</p>
+            <p>Les tarifs de la livraison seront communiqué ultérieurement.</p>
+        </div>
     </div>
--->
-
-    <div class="horaires">
-        <h1>Horaires</h1>
-
-        <p>
-            Tout les soirs de 17h à 21h30 P+R La chapelle Aulnay ouest
-        </p>
-    </div>
-<!--
-    <img src="/img/PIZZA 2.png">
-    <img src="/img/PIZZA 1.png">
---->
 
 </body>
 </html>

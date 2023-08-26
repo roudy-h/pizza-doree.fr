@@ -18,6 +18,17 @@ body{
 }
 
 
+@media (max-width: 800px) {
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 17px;
+    }
+}
 
 
 /*La cuisine d'Orée*/
