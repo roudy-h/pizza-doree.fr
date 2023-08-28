@@ -16,8 +16,26 @@
     gap: 10px;
 }
 
-.infoLivraison p {
+.infoLivraison .tarifs {
+    color: red;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 7.5px;
+}
+
+ul {
+    padding-left: 20px;
     color: red;
 }
 
-@media (max-width: 800px)
+.tarifs:first-child{
+    font-weight: bold;
+}
+
+
+@media (max-width: 800px)  {
+    .infoLivraison ul {
+        display: block;
+    }
+}

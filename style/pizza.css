@@ -6,19 +6,12 @@
     gap: 20px;
 }
 
-.element .titre{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-}
-
-
 .element .titre h1{
     font-size: 35px;
 }
 
 .element  h2{
-    font-size: 20px;
+    font-size: 35px;
 }
 
 .pizza{
@@ -30,7 +23,7 @@
 .tailles{
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
 }
@@ -52,12 +45,33 @@
     font-weight: bold;
 }
 
-.pizza_25{
-    padding: 20px;
+.taille-pizza :first-child{
+    font-size: 25px;
 }
 
-.pizza_30{
-    padding-bottom: 20px;
+.taille-pizza p:nth-child(0n+5){
+    color: red;
+}
+
+.taille-pizza p:nth-child(0n+6){
+    color: red;
+}
+
+.pizza_24{
+    padding: 23px;
+    width: 150px;
+    height: 15px;
+}
+
+.pizza_29{
+    padding: 11px;
+    width: 175px;
+    height: 175px;
+}
+
+.pizza_29{
+    width: 200px;
+    height: 200px;
 }
 
 .tartine{
@@ -100,6 +114,7 @@
     .taille-pizza{
         padding: 15px;
         gap: 10px;
+        width: 100%;
     }
     
     .taille-pizza p {
@@ -107,16 +122,22 @@
         font-weight: bold;
     }
     
-    .pizza_25{
+    .pizza_24{
         padding: 10px 10px 25px 10px ;
-        width: 85px;
-        height: 85px;
+        width: 80px;
+        height: 80px;
     }
 
-    .pizza_30{
-        padding: 10px;
+    .pizza_29{
+        padding: 10px 10px 25px 10px ;
         width: 100px;
         height: 100px;
+    }
+
+    .pizza_34{
+        padding: 10px;
+        width: 130px;
+        height: 130px;
     }
     
     .tartine{

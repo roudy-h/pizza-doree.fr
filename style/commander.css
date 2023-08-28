@@ -5,19 +5,53 @@
     padding: 2% 4%;
 }
 
+.moyens{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(550px,1fr));
+    row-gap: 25px;
+    column-gap: 25px;    
+}
+
 .infoCommande{
     background-color: white;
     border: solid 3px #b6ae55;
     border-radius: 20px;;
     color: rgba(35,168,52,255);
-    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.infoCommande p {
-    color: red;
+.infoCommande a {
+    color: rgba(35,168,52,255);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
 }
 
-@media (max-width: 800px)
+.infoCommande img{
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 800px) {
+    #commander {
+        grid-template-columns: 1fr;
+    }
+
+    .infoCommande h1 {
+        font-size: 20px;
+    }
+
+    .infoCommande img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .moyens{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}

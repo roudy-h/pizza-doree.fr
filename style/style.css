@@ -11,12 +11,12 @@ body{
     width: 100%;
 }
 
-
+/*
 @font-face {
     font-family: 'Open Sans';
     src: url(/font/Caramel-Regular.ttf)
 }
-
+*/
 
 @media (max-width: 800px) {
     h1 {

@@ -3,16 +3,31 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    gap: 20px;
     background-image: url("/images/img_pizza_deb_fonce.jpg");
     background-size: cover;
-    font-size: 100px;
+    font-size: 60px;
+    /*
     font-family: 'Open Sans';
-    padding: 50px 40px 180px 40px;
+    */
+    padding: 150px 40px 180px 40px;
+}
+
+.bienv h2{
+    color: rgb(243, 243, 7);
 }
 
 .bienv p {
     font-size: 0.68em;
+}
+
+#artisanale{
+    font-size: 80px;
+    color: red;
+}
+
+#livraison_intro{
+    color: greenyellow;
 }
 
 #lieux{
