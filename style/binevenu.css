@@ -1,3 +1,8 @@
+.presentation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .presentation .bienv{
     display: flex;
     align-items: center;
@@ -10,24 +15,20 @@
     /*
     font-family: 'Open Sans';
     */
-    padding: 150px 40px 180px 40px;
+    padding: 75px 40px 50px 40px;
 }
 
-.bienv h2{
+.bienv p{
+    font-size: 0.7em;
+}
+
+.bienv p:first-child {
     color: rgb(243, 243, 7);
-}
-
-.bienv p {
-    font-size: 0.68em;
-}
-
-#artisanale{
-    font-size: 80px;
-    color: red;
 }
 
 #livraison_intro{
     color: greenyellow;
+    font-weight: bold;
 }
 
 #lieux{
@@ -45,6 +46,46 @@
 }
 
 
+#pouletFrites{
+    font-size: 30px;
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 20px 0px 20px;
+}
+
+.ele{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.pf{
+    padding-top: 20px;
+}
+
+#frites{
+    width: 150px;
+    height: 150px;
+}
+
+#wings{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+}
+
+#aiguiette{
+    width: 150px;
+    height: 150px;
+}
+
+
+.tenders{
+    background-image: url("/images/tendeurs.png");
+    background-size: cover;
+}
 
 @media (max-width: 800px) {
     .presentation .bienv{
