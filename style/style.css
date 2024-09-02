@@ -1,3 +1,12 @@
+@import url('barreDeNavigation.css');
+@import url('binevenu.css');
+@import url('commander.css');
+@import url('emplacements.css');
+@import url('livraison.css');
+@import url('menu.css');
+@import url('paiement.css');
+@import url('pizza.css');
+
 *{
     padding: 0;
     margin: 0;
