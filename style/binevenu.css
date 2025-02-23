@@ -1,6 +1,6 @@
 .presentation{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
 }
 
 .presentation .bienv{
@@ -16,6 +16,7 @@
     font-family: 'Open Sans';
     */
     padding: 75px 40px 50px 40px;
+    height: 150px;
 }
 
 .bienv p{
@@ -92,6 +93,7 @@
         font-size: 50px;
         padding: 20px 20px 40px 20px;
         font-size: 1.5em;
+        height: 100px;
     }
 
 
